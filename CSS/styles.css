@@ -1,0 +1,24 @@
+body {
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.link-contacts {
+  color: #757575;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: #2196f3;
+}
+
+.filter-buttons {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.filter-buttons:hover,
+.filter-buttons:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
