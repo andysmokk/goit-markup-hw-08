@@ -1,24 +1,92 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --button-text-color: #212121;
+  --button-text-color-hover-focus: #ffffff;
+  --button-background-color: #f5f4fa;
+  --link-text-ontacts: #757575;
+  --link-text-site-nav: #212121;
+  --accent-text-color: #2196f3;
+}
+
 body {
-  color: #212121;
+  color: var(--primery-text-color);
   background-color: #ffffff;
 }
 
+/* логотип */
+.logo {
+  color: #212121;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ссылки навигации */
+.site-nav .link {
+  color: var(--link-text-site-nav);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+/* ссылки связаться с нами */
 .link-contacts {
-  color: #757575;
+  color: var(--link-text-ontacts);
 }
 
 .link-contacts:hover,
 .link-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
+/* кнопки фильтра */
 .filter-buttons {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
 }
 
 .filter-buttons:hover,
 .filter-buttons:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--button-text-color-hover-focus);
+  background-color: var(--accent-text-color);
 }
+
+/* секции */
+.hero {
+}
+
+.section {
+}
+
+.hero-title {
+  color: var();
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* для перераспредедения свойства
+.features > .section-title {color: #ffffff;} */
+
+/* цвет заголовков и кнопок фильтра #212121; */
+
+/* цвет основного текста #757575 */
+
+/* белый #ffffff */
+
+/* акцент #2196F3 */
+
+/* текст контактов футера rgba(255,255,255,0,6) */
