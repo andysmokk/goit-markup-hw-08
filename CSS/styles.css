@@ -19,6 +19,10 @@ body {
   color: #212121;
 }
 
+.logo-footer {
+  color: #ffffff;
+}
+
 .logo-web {
   color: #2196f3;
 }
@@ -46,12 +50,16 @@ body {
   color: var(--link-text-ontacts);
 }
 
+.link-contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .link-contacts:hover,
 .link-contacts:focus {
   color: var(--accent-text-color);
 }
 
-/* кнопки фильтра */
+/* кнопки */
 .filter-buttons {
   color: var(--button-text-color);
   background-color: var(--button-background-color);
@@ -63,19 +71,37 @@ body {
   background-color: var(--accent-text-color);
 }
 
+.button-cursor {
+  cursor: pointer;
+}
+
 /* секции */
 .hero {
+  background-color: #2f303a;
 }
 
-.section {
+.button-primery {
+  color: #ffffff;
+  background-color: #2196f3;
 }
+
+/* .section {}*/
 
 .hero-title {
-  color: var();
+  color: #ffffff;
 }
 
 .section-title {
   color: var(--title-text-color);
+}
+
+/* оформление футера */
+.section-footer {
+  background-color: #2f303a;
+}
+
+.text-address {
+  color: #ffffff;
 }
 
 /* для перераспредедения свойства
