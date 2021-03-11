@@ -14,6 +14,9 @@ body {
   background-color: #ffffff;
 
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* логотип */
@@ -34,8 +37,15 @@ body {
 }
 
 /* ссылки навигации */
-.link-page {
-  font-style: 400px;
+.link {
+  text-decoration: none;
+}
+
+.link-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link-page {
@@ -95,10 +105,42 @@ body {
 
 .hero-title {
   color: #ffffff;
+
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section-title {
   color: var(--title-text-color);
+}
+
+.features-title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.team-title {
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-title {
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* оформление футера */
@@ -108,6 +150,21 @@ body {
 
 .text-address {
   color: #ffffff;
+}
+
+address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* для перераспредедения свойства
