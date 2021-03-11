@@ -12,6 +12,8 @@
 body {
   color: var(--primery-text-color);
   background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
 }
 
 /* логотип */
@@ -32,16 +34,20 @@ body {
 }
 
 /* ссылки навигации */
-.site-nav .link {
+.link-page {
+  font-style: 400px;
+}
+
+.site-nav .link-page {
   color: var(--link-text-site-nav);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link-page:hover,
+.site-nav .link-page:focus {
   color: var(--accent-text-color);
 }
 
-.site-nav .link.current {
+.site-nav .link-page.current {
   color: var(--accent-text-color);
 }
 
