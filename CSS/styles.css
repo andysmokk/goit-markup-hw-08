@@ -14,14 +14,16 @@ body {
   background-color: #ffffff;
 
   font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 /* логотип */
 .logo {
   color: #212121;
+
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo-footer {
@@ -106,7 +108,6 @@ body {
 .hero-title {
   color: #ffffff;
 
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -120,27 +121,34 @@ body {
 }
 
 .features-title {
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.team-title {
-  font-family: Roboto;
+.features-text {
+  font-size: 14px;
+  line-height: 1.71x;
+  letter-spacing: 0.03em;
+}
+
+.team-title,
+.work-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.work-title {
-  font-family: Roboto;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.work-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.position-member-text {
 }
 
 /* оформление футера */
