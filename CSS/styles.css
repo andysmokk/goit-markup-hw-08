@@ -223,3 +223,15 @@ address {
 
 /* для перераспредедения свойства
 .features > .section-title {color: #ffffff;} */
+
+/* позиционирование */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
