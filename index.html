@@ -65,7 +65,7 @@
     </header>
     <main>
       <!-- Секция герой -->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button-primery button-cursor">
@@ -119,21 +119,21 @@
         <div class="container">
           <h2 class="section-title work-title">Чем мы занимаемся</h2>
           <ul class="list work-container">
-            <li class="work-container-item">
+            <li class="work-container-item grid-item">
               <img
                 src="./images/home/programer-working.jpg"
                 alt="программист работает за столом в офисе"
                 width="370"
               />
             </li>
-            <li class="work-container-item">
+            <li class="work-container-item grid-item">
               <img
                 src="./images/home/web-ui-designers.jpg"
                 alt="веб-дизайнеры разрабатывают приложения для смартфонов"
                 width="370"
               />
             </li>
-            <li class="work-container-item">
+            <li class="work-container-item grid-item">
               <img
                 src="./images/home/creative-artist-web-design.jpg"
                 alt="художник веб-дизайна с графическим планшетом"
@@ -148,42 +148,50 @@
       <section class="section">
         <div class="container team-container">
           <h2 class="section-title team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="list work-list">
+            <li class="grid-item team-item">
               <img
                 src="./images/home/product-designer.jpg"
                 alt="Продакт-дизайнер"
                 width="270"
               />
-              <h3 class="section-title work-member">Игорь Демьяненко</h3>
-              <p class="position-member-text">Product Designer</p>
+              <div class="team-text-box">
+                <h3 class="section-title work-member">Игорь Демьяненко</h3>
+                <p class="position-member-text">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="grid-item team-item">
               <img
                 src="./images/home/frontend-developer.jpg"
                 alt="Фронтенд-разработчик"
                 width="270"
               />
-              <h3 class="section-title work-member">Ольга Репина</h3>
-              <p class="position-member-text">Frontend Developer</p>
+              <div class="team-text-box">
+                <h3 class="section-title work-member">Ольга Репина</h3>
+                <p class="position-member-text">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="grid-item team-item">
               <img
                 src="./images/home/marketing.jpg"
                 alt="Маркетолог"
                 width="270"
               />
-              <h3 class="section-title work-member">Николай Тарасов</h3>
-              <p class="position-member-text">Marketing</p>
+              <div class="team-text-box">
+                <h3 class="section-title work-member">Николай Тарасов</h3>
+                <p class="position-member-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="grid-item team-item">
               <img
                 src="./images/home/ui-designer.jpg"
                 alt="Дизайнер интерфейсов"
                 width="270"
               />
-              <h3 class="section-title work-member">Михаил Ермаков</h3>
-              <p class="position-member-text">UI Designer</p>
+              <div class="team-text-box">
+                <h3 class="section-title work-member">Михаил Ермаков</h3>
+                <p class="position-member-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -207,18 +215,22 @@
           </div>
           <ul class="list">
             <li>
-              <a
-                class="link-contacts link-contacts-footer link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <div class="mail-link">
+                <a
+                  class="link-contacts link-contacts-footer link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </div>
             </li>
             <li>
-              <a
-                class="link-contacts link-contacts-footer link"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+              <div class="tel-link">
+                <a
+                  class="link-contacts link-contacts-footer link"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </div>
             </li>
           </ul>
         </address>
