@@ -9,6 +9,7 @@
   --accent-text-color: #2196f3;
   --grid-item: 4;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -77,21 +78,17 @@ body {
 
 .logo-header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-footer-container {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-footer {
   color: #ffffff;
 
   display: inline-block;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .logo-web {
@@ -116,8 +113,8 @@ body {
 
 .link-page {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link-page {
@@ -142,8 +139,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-contacts-footer {
@@ -152,6 +149,10 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  /* border: 1px solid red; */
 }
 
 .link-contacts:hover,
@@ -189,6 +190,8 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .button-primery {
@@ -212,6 +215,10 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-work {
+  padding-top: 0;
 }
 
 .hero-title {
@@ -348,6 +355,8 @@ body {
 /* оформление футера */
 .section-footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .text-address {
@@ -434,7 +443,7 @@ address {
 
   padding-top: 20px;
   padding-right: 24px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   padding-left: 24px;
 }
 
@@ -446,9 +455,9 @@ address {
   margin-bottom: 9px;
 }
 
-.tel-link {
-  padding-bottom: 20px;
-}
+/* .tel-link {
+  border: 1px solid black;
+} */
 
 .filter-box {
   display: flex;
