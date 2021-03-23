@@ -217,6 +217,7 @@ body {
 .overlay {
   max-width: 1600px;
   min-height: 600px;
+  /* height: 100vh; */
   margin-left: auto;
   margin-right: auto;
 
