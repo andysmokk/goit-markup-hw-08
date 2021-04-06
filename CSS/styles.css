@@ -137,23 +137,14 @@ body {
   color: var(--accent-text-color);
 }
 
-.current-border-studia::after {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 4px;
-  background-color: var(--accent-text-color);
-
-  border-radius: 4px;
-
-  position: absolute;
-  bottom: -1px;
+.nav-item {
+  position: relative;
 }
 
-.current-border-portfolio:after {
+.current-page::after {
   content: '';
   display: block;
-  width: 78px;
+  width: 100%;
   height: 4px;
   background-color: var(--accent-text-color);
 
@@ -566,8 +557,6 @@ address {
 .site-nav {
   display: flex;
   margin-left: 93px;
-
-  position: relative;
 }
 
 .site-nav .nav-item:not(:last-child) {
