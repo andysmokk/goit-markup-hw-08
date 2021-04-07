@@ -74,7 +74,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-/* логотип */
+/* Логотип */
 
 .logo {
   color: #212121;
@@ -109,7 +109,7 @@ body {
   list-style: none;
 }
 
-/* ссылки навигации */
+/* Ссылки навигации */
 
 .link-item {
   font-weight: 500;
@@ -154,7 +154,7 @@ body {
   bottom: -1px;
 }
 
-/* ссылки связаться с нами */
+/* Ссылки связаться с нами */
 
 .link-contacts {
   color: var(--link-text-ontacts);
@@ -184,7 +184,7 @@ body {
   color: var(--accent-text-color);
 }
 
-/* кнопки */
+/* Кнопки */
 
 .filter-buttons {
   color: var(--button-text-color);
@@ -213,7 +213,7 @@ body {
   cursor: pointer;
 }
 
-/* секции */
+/* Секции */
 
 .hero {
   background-color: #2f303a;
@@ -240,7 +240,7 @@ body {
   text-align: center;
 }
 
-/* фон героя */
+/* Фон героя */
 
 .overlay {
   max-width: 1600px;
@@ -312,7 +312,6 @@ body {
 }
 
 .grid-item {
-  /* flex-basis: calc((100% - 120px) / 4); */
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
 }
 
@@ -326,14 +325,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  /* --grid-item: 3; */
 }
 
 .work-container-item {
   position: relative;
 
   --grid-item: 3;
-  margin-right: 30px;
+
+  text-align: center;
 }
 
 .work-list {
@@ -357,7 +356,7 @@ body {
   margin-right: 30px;
 }
 
-.work-container .work-container-item:not(:last-child) {
+.work-container-item {
   margin-right: 30px;
 }
 
@@ -403,6 +402,12 @@ body {
 }
 
 .work-img-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 70px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -410,19 +415,12 @@ body {
   text-transform: uppercase;
   color: var(--accent-icon-color);
 
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-
   background-color: rgba(47, 48, 58, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  padding-top: 27px;
 }
 
-/* секция наша команда */
+/* Секция наша команда */
 
 .team-container {
   background-color: var(--button-background-color);
@@ -477,10 +475,9 @@ body {
 }
 
 /* оформление футера */
+
 .section-footer {
   background-color: #2f303a;
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
 }
 
 .text-address {
@@ -527,8 +524,6 @@ address {
   margin-right: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  /* flex-basis: calc((50% - 45px) / 2); */
 }
 
 .flex-footer-box {
@@ -539,8 +534,6 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* flex-basis: calc((50% - 45px) / 2); */
 }
 
 .social-icons-list-footer {
@@ -552,7 +545,7 @@ address {
   align-items: center;
 }
 
-/* позиционирование */
+/* Позиционирование */
 
 .site-nav {
   display: flex;
@@ -567,8 +560,6 @@ address {
   display: flex;
   margin-left: auto;
 }
-
-/* .link-contacts-box  */
 
 .item-box + .item-box {
   margin-left: 50px;
@@ -628,24 +619,14 @@ address {
   margin-bottom: 50px;
 }
 
-/* .filter-box-container  */
-
 .filter-item + .filter-item {
   margin-left: 8px;
 }
 
 /* Оформление overlay */
 
-/* .example-box {
-  position: relative;
-} */
-
 .overlay-example-box {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .overlay-example-box:before {
@@ -667,15 +648,18 @@ address {
 
 .overlay-example-text {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  padding: 63px 24px;
+  opacity: 0;
+
+  min-width: 322px;
 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--button-text-color-hover-focus);
-
-  opacity: 0;
 }
 
 .link:hover .overlay-example-text,
@@ -683,15 +667,7 @@ address {
   opacity: 1;
 }
 
-/* .overlay-example-box:hover:before {
-  opacity: 1;
-}
-
-.link:focus .overlay-example-box:before {
-  opacity: 1;
-} */
-
-/* оформление иконок */
+/* Оформление иконок */
 
 .link-contacts-icon {
   display: flex;
@@ -756,10 +732,54 @@ address {
   fill: #ffffff;
 }
 
-/* тень примеров портфолио */
+/* Тень примеров портфолио */
 
 .link:hover .example-box,
 .link:focus .example-box {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-close {
+  /* display: flex; */
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: #fff;
+
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+  padding-right: 8px;
 }
