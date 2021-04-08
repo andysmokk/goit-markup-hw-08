@@ -10,6 +10,8 @@
   --social-icon-color: #afb1b8;
   --accent-icon-color: #ffffff;
   --grid-item: 4;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-speed: 250ms;
 }
 
 html {
@@ -37,6 +39,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
 }
 
 .list {
@@ -122,6 +128,8 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color var(--animation-speed) var(--timing-function);
 }
 
 .site-nav .link-page {
@@ -166,6 +174,8 @@ body {
   letter-spacing: 0.02em;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  transition: color var(--animation-speed) var(--timing-function);
 }
 
 .link-contacts-footer {
@@ -199,6 +209,10 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition: background-color var(--animation-speed) var(--timing-function),
+    color var(--animation-speed) var(--timing-function),
+    box-shadow var(--animation-speed) var(--timing-function);
 }
 
 .filter-buttons:hover,
@@ -207,10 +221,6 @@ body {
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button-cursor {
-  cursor: pointer;
 }
 
 /* Секции */
@@ -451,6 +461,8 @@ body {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border var(--animation-speed) var(--timing-function);
 }
 
 .client-item {
@@ -462,6 +474,8 @@ body {
 
 .client-icon {
   fill: var(--social-icon-color);
+
+  transition: fill var(--animation-speed) var(--timing-function);
 }
 
 .client-item-link:hover,
@@ -474,7 +488,7 @@ body {
   fill: var(--accent-text-color);
 }
 
-/* оформление футера */
+/* Оформление футера */
 
 .section-footer {
   background-color: #2f303a;
@@ -627,6 +641,8 @@ address {
 
 .overlay-example-box {
   position: relative;
+
+  overflow: hidden;
 }
 
 .overlay-example-box:before {
@@ -638,33 +654,41 @@ address {
 
   width: 100%;
   height: 100%;
-  opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform var(--animation-speed) var(--timing-function);
 }
 
 .link:hover .overlay-example-box:before,
 .link:focus .overlay-example-box:before {
   opacity: 1;
+
+  transform: translateY(0);
 }
 
 .overlay-example-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  opacity: 0;
-
-  min-width: 322px;
-
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--button-text-color-hover-focus);
 }
 
-.link:hover .overlay-example-text,
-.link:focus .overlay-example-text {
+.overlay-example-box-text {
+  padding: 63px 24px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  transition: transform var(--animation-speed) var(--timing-function);
+}
+
+.link:hover .overlay-example-box-text,
+.link:focus .overlay-example-box-text {
   opacity: 1;
+
+  transform: translateY(0);
 }
 
 /* Оформление иконок */
@@ -708,10 +732,14 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+
+  transition: background-color var(--animation-speed) var(--timing-function);
 }
 
 .social-icons-item .social-icon {
   fill: var(--social-icon-color);
+
+  transition: fill var(--animation-speed) var(--timing-function);
 }
 
 .social-icons-link:hover .social-icon,
@@ -734,6 +762,10 @@ address {
 
 /* Тень примеров портфолио */
 
+.example-box {
+  transition: box-shadow var(--animation-speed) var(--timing-function);
+}
+
 .link:hover .example-box,
 .link:focus .example-box {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -749,16 +781,22 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity var(--animation-speed) var(--timing-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: visible;
   pointer-events: none;
 }
 
-.button-close {
-  /* display: flex; */
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+}
 
+.button-close {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
@@ -771,15 +809,21 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--animation-speed) var(--timing-function);
 
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
 
-  background-color: #fff;
+  border-radius: 4px;
+
+  background-color: #ffffff;
 
   display: flex;
   justify-content: flex-end;
   padding-top: 8px;
   padding-right: 8px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
