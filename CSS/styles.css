@@ -535,19 +535,33 @@ address {
 }
 
 .flex-footer-addres {
-  margin-right: 70px;
+  /* margin-right: 70px; */
   padding-top: 60px;
   padding-bottom: 60px;
+
+  --grid-item: 2;
+  flex-basis: calc((50% - 45px) / var(--grid-item));
 }
 
 .flex-footer-box {
   padding-top: 72px;
   padding-bottom: 100px;
-  margin-right: 94px;
+  /* margin-right: 94px; */
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  --grid-item: 2;
+  flex-basis: calc((50% - 45px) / var(--grid-item));
+}
+
+.subscribe-form {
+  padding-top: 72px;
+  padding-bottom: 94px;
+
+  flex-basis: calc(50% - 15px);
+  /* display: flex; */
 }
 
 .social-icons-list-footer {
@@ -557,6 +571,14 @@ address {
 .social-icons-item-footer {
   display: flex;
   align-items: center;
+}
+
+.subscribe-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 200px;
+  height: 50px;
 }
 
 /* Позиционирование */
@@ -887,7 +909,6 @@ label {
   margin-top: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
-  height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
