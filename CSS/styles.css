@@ -803,6 +803,8 @@ address {
   border-radius: 50%;
 
   background-color: #fff;
+
+  z-index: 1;
 }
 
 .modal {
@@ -826,4 +828,118 @@ address {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Оформление содержимого модалки */
+
+.form-request {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  padding: 40px;
+}
+
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--button-text-color);
+
+  margin-bottom: 12px;
+}
+
+.input-data {
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-field input {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-policy input {
+  margin-right: 8px;
+}
+
+.form-policy input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+}
+
+.text-policy {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  padding: 10px 55px;
+
+  display: block;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: var(--button-background-color);
+  background-color: var(--accent-text-color);
+
+  border: 0;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
