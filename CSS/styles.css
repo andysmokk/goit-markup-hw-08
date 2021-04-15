@@ -952,8 +952,6 @@ label {
   border-radius: 4px;
 
   transition: border var(--animation-speed) var(--timing-function);
-
-  cursor: pointer;
 }
 
 .form-field textarea {
@@ -964,8 +962,6 @@ label {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--animation-speed) var(--timing-function);
-
-  cursor: pointer;
 }
 
 label {
@@ -981,9 +977,6 @@ label {
 }
 
 .form-policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .form-policy input {
@@ -996,6 +989,8 @@ label {
 }
 
 .text-policy {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
