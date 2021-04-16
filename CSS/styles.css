@@ -11,7 +11,7 @@
   --accent-icon-color: #ffffff;
   --grid-item: 4;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-speed: 2500ms;
+  --animation-speed: 250ms;
 }
 
 html {
@@ -977,23 +977,16 @@ label {
 }
 
 .form-policy {
-}
-
-.form-policy input {
-  margin-right: 8px;
-}
-
-.form-policy input[type='checkbox'] {
-  width: 16px;
-  height: 15px;
+  text-align: center;
+  position: relative;
 }
 
 .text-policy {
-  display: inline-block;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  padding-left: 24px;
 }
 
 .form-button {
@@ -1005,7 +998,7 @@ label {
   padding: 10px 55px;
 
   display: block;
-  margin-top: 25px;
+  margin-top: 23px;
   margin-right: auto;
   margin-left: auto;
 
@@ -1030,12 +1023,6 @@ label {
   border: 1px solid var(--accent-text-color);
 }
 
-.icon-modal {
-  fill: var(--button-text-color);
-
-  transition: fill var(--animation-speed) var(--timing-function);
-}
-
 .input-data:hover + .icon-modal,
 .input-data:focus + .icon-modal {
   fill: var(--accent-text-color);
@@ -1044,6 +1031,36 @@ label {
 .icon-modal {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 3.5%;
   transform: translateY(-30%);
+
+  fill: var(--button-text-color);
+
+  transition: fill var(--animation-speed) var(--timing-function);
+}
+
+.checkbox-policy {
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 2.6%;
+  transform: translateY(-50%);
+
+  fill: var(--button-text-color);
+}
+
+.checkbox-policy:checked + .checkbox-icon {
+  background-color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  border-radius: 2px;
+
+  background-image: url(../images/icons/checkbox.svg);
+  background-size: contain;
 }
