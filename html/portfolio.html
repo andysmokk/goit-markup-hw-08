@@ -21,38 +21,40 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container main-nav">
-        <nav>
-          <div class="main-nav">
-            <a
-              href="https://andysmokk.github.io/goit-markup-hw-06/"
-              class="logo link logo-header"
-            >
-              <span class="logo-web">Web</span>Studio</a
-            >
-            <ul class="list site-nav">
-              <li class="nav-item">
-                <a href="../index.html" class="link-page link link-item"
-                  >Студия</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="./portfolio.html"
-                  class="link-page current link link-item current-page"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="link-page link link-item">Контакты</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container header--align-center">
+        <nav class="navigation">
+          <a
+            href="https://andysmokk.github.io/goit-markup-hw-06/"
+            class="logo header__logo--position"
+          >
+            <span class="logo__text--blue">Web</span>Studio</a
+          >
+          <ul class="navigation__list">
+            <li class="navigation__ltem">
+              <a
+                href="../index.html"
+                class="navigation__link navigation__link--position"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation__ltem">
+              <a
+                href="./portfolio.html"
+                class="navigation__link navigation__link--position current navigation--current-page"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__ltem">
+              <a href="" class="navigation__link navigation__link--position"
+                >Контакты</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="list link-contacts-box">
-          <li class="item-box email-box">
+        <ul class="contacts">
+          <li class="contacts__item">
             <a
-              class="link-contacts link link-item link-contacts-icon"
+              class="link-contacts link-item link-contacts-icon"
               href="mailto:info@devstudio.com"
             >
               <svg class="contacts-icon" width="16" height="12">
@@ -61,9 +63,9 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="item-box">
+          <li class="contacts__item">
             <a
-              class="link-contacts link link-item link-contacts-icon"
+              class="link-contacts link-item link-contacts-icon"
               href="tel:+380961111111"
               ><svg class="contacts-icon" width="10" height="16">
                 <use href="../images/icons/sprite.svg#icon-smartphone"></use>
@@ -79,7 +81,7 @@
         <div class="container filter-box-container">
           <!--заголовок "Примеры работ" скрыт-->
           <h1 class="visually-hidden">Примеры работ</h1>
-          <ul class="list filter-box">
+          <ul class="filter-box">
             <li class="filter-item">
               <button type="button" class="filter-buttons">Все</button>
             </li>
@@ -98,7 +100,7 @@
           </ul>
         </div>
         <div class="container">
-          <ul class="list examples-flex">
+          <ul class="examples-flex">
             <li class="examples-element">
               <a href="" class="link link-visited">
                 <div class="example-box">
@@ -289,16 +291,16 @@
         <div class="flex-footer-addres">
           <a
             href="https://andysmokk.github.io/goit-markup-hw-06/"
-            class="logo logo-footer link logo-footer-container"
+            class="logo logo-footer logo-footer-container"
           >
-            <span class="logo-web">Web</span>Studio</a
+            <span class="logo__text--blue">Web</span>Studio</a
           >
           <address>
             <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="list">
               <li>
                 <a
-                  class="link-contacts link-contacts-footer link mail-link-box"
+                  class="link-contacts link-contacts-footer mail-link-box"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -316,7 +318,7 @@
 
         <div class="flex-footer-box">
           <p class="join-social-text">присоединяйтесь</p>
-          <ul class="list social-icons-list-footer">
+          <ul class="social-icons-list-footer">
             <li class="social-icons-item">
               <a href="" class="social-icons-link social-icons-link-footer">
                 <svg

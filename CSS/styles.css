@@ -24,6 +24,19 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -43,16 +56,6 @@ img {
 
 button {
   cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .link-visited:visited {
@@ -91,7 +94,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo--position {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -106,12 +109,8 @@ body {
   display: inline-block;
 }
 
-.logo-web {
+.logo__text--blue {
   color: #2196f3;
-}
-
-.list {
-  list-style: none;
 }
 
 /* Ссылки навигации */
@@ -123,32 +122,40 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link-page {
+.navigation__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
   transition: color var(--animation-speed) var(--timing-function);
 }
 
-.site-nav .link-page {
+.navigation__link--position {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation__list .navigation__link {
   color: var(--link-text-site-nav);
 }
 
-.site-nav .link-page:hover,
-.site-nav .link-page:focus {
+.navigation__list .navigation__link:hover,
+.navigation__list .navigation__link:focus {
   color: var(--accent-text-color);
 }
 
-.site-nav .link-page.current {
+.navigation__list .navigation__link.current {
   color: var(--accent-text-color);
 }
 
-.nav-item {
+.navigation__ltem {
   position: relative;
 }
 
-.current-page::after {
+.navigation--current-page::after {
   content: '';
   display: block;
   width: 100%;
@@ -621,25 +628,30 @@ address {
 
 /* Позиционирование */
 
-.site-nav {
+.navigation__list {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .nav-item:not(:last-child) {
+.navigation__list .navigation__ltem:not(:last-child) {
   margin-right: 50px;
 }
 
-.link-contacts-box {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.item-box + .item-box {
+.contacts__item--position + .contacts__item--position {
   margin-left: 50px;
 }
 
-.main-nav {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header--align-center {
   display: flex;
   align-items: center;
 }
