@@ -52,22 +52,30 @@
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contacts__item">
+          <li class="contacts__item--position">
             <a
-              class="link-contacts link-item link-contacts-icon"
+              class="contacts__link contacts__link--position contacts__link--padding"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-icon" width="16" height="12">
+              <svg
+                class="contacts__icon contacts__icon--posotion"
+                width="16"
+                height="12"
+              >
                 <use href="../images/icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item--position">
             <a
-              class="link-contacts link-item link-contacts-icon"
+              class="contacts__link contacts__link--position contacts__link--padding"
               href="tel:+380961111111"
-              ><svg class="contacts-icon" width="10" height="16">
+              ><svg
+                class="contacts__icon contacts__icon--posotion"
+                width="10"
+                height="16"
+              >
                 <use href="../images/icons/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -77,41 +85,45 @@
       </div>
     </header>
     <main>
+      <!-- Секция примеры работ -->
       <section class="section">
-        <div class="container filter-box-container">
+        <!-- Контейнер с фильтром -->
+        <div class="container container--margin">
           <!--заголовок "Примеры работ" скрыт-->
           <h1 class="visually-hidden">Примеры работ</h1>
-          <ul class="filter-box">
-            <li class="filter-item">
-              <button type="button" class="filter-buttons">Все</button>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="filter__button">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-buttons">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-buttons">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-buttons">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-buttons">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
         </div>
+
+        <!-- Контейнер примеры работ -->
         <div class="container">
-          <ul class="examples-flex">
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+          <ul class="examples examples--margin">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/int-site-technocryc.jpg"
                       alt="открытый ноутбук"
                       width="370"
                     />
-                    <div class="overlay-example-box-text">
-                      <p class="overlay-example-text">
+                    <div class="examples__text--overlay">
+                      <p class="examples__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
                         цифрового шпионажа и атак на защищённые сервера
@@ -119,7 +131,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Технокряк
                     </h2>
@@ -128,17 +140,17 @@
                 </div></a
               >
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/poster-new-orlean-golden-star.jpg"
                       alt="два баскетболиста в игре"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Постер New Orlean vs Golden Star
                     </h2>
@@ -147,17 +159,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/restaurant-seafood.jpg"
                       alt="логлтип ресторана"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Ресторан Seafood
                     </h2>
@@ -166,17 +178,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/project-prime.jpg"
                       alt="наушники"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Проект Prime
                     </h2>
@@ -185,17 +197,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/project-boxes.jpg"
                       alt="две коробки"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Проект Boxes
                     </h2>
@@ -204,17 +216,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/inspiration-has-no-borders.jpg"
                       alt="компьютерный монитор"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Inspiration has no Borders
                     </h2>
@@ -223,17 +235,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/edition-limited-edition.jpg"
                       alt="отурытый журнал"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Издание Limited Edition
                     </h2>
@@ -242,17 +254,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/project-lab.jpg"
                       alt="бумажная бирка"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Проект LAB
                     </h2>
@@ -261,17 +273,17 @@
                 </div>
               </a>
             </li>
-            <li class="examples-element">
-              <a href="" class="link link-visited">
-                <div class="example-box">
-                  <div class="overlay-example-box">
+            <li class="examples__item examples__item--margin">
+              <a href="" class="examples__link examples__link--visited">
+                <div class="examples__box--shadow">
+                  <div class="examples__box--overlay">
                     <img
                       src="../images/portfolio/growing-business.jpg"
                       alt="человек работает на ноутбуке"
                       width="370"
                     />
                   </div>
-                  <div class="examples-text-box">
+                  <div class="examples__box--border">
                     <h2 class="section-title section-title-portfolio">
                       Growing Business
                     </h2>
@@ -286,29 +298,29 @@
     </main>
 
     <!-- Футер -->
-    <footer class="section-footer">
-      <div class="container flex-footer">
-        <div class="flex-footer-addres">
+    <footer class="footer">
+      <div class="container footer__flex">
+        <div class="footer__addres footer__addres--position">
           <a
             href="https://andysmokk.github.io/goit-markup-hw-06/"
-            class="logo logo-footer logo-footer-container"
+            class="logo footer__logo footer__logo--margin"
           >
             <span class="logo__text--blue">Web</span>Studio</a
           >
           <address>
-            <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="address__text address__text--margin">
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
             <ul class="list">
               <li>
                 <a
-                  class="link-contacts link-contacts-footer mail-link-box"
+                  class="address__contact address__contact--margin"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a
-                  class="link-contacts link-contacts-footer link"
-                  href="tel:+380961111111"
+                <a class="address__contact" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -316,67 +328,56 @@
           </address>
         </div>
 
-        <div class="flex-footer-box">
-          <p class="join-social-text">присоединяйтесь</p>
-          <ul class="social-icons-list-footer">
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link social-icons-link-footer">
-                <svg
-                  class="social-icon social-icon-footer"
-                  width="20"
-                  height="20"
-                >
+        <div class="footer__social footer__social--position">
+          <p class="social__text social__text--margin">присоединяйтесь</p>
+          <ul class="social__list">
+            <li class="social__item social__item--margin">
+              <a href="" class="social__link social__link--background">
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="../images/icons/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link social-icons-link-footer">
-                <svg
-                  class="social-icon social-icon-footer"
-                  width="20"
-                  height="16.25"
-                >
+            <li class="social__item social__item--margin">
+              <a href="" class="social__link social__link--background">
+                <svg class="social__icon--white" width="20" height="16.25">
                   <use href="../images/icons/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link social-icons-link-footer">
-                <svg
-                  class="social-icon social-icon-footer"
-                  width="10"
-                  height="20"
-                >
+            <li class="social__item social__item--margin">
+              <a href="" class="social__link social__link--background">
+                <svg class="social__icon--white" width="10" height="20">
                   <use href="../images/icons/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link social-icons-link-footer">
-                <svg
-                  class="social-icon social-icon-footer"
-                  width="20"
-                  height="20"
-                >
+            <li class="social__item social__item--margin">
+              <a href="" class="social__link social__link--background">
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="../images/icons/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="subscribe-form">
-          <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <div class="subscribe-box">
+        <form class="subscribe subscribe--padding">
+          <p class="subscribe__text subscribe__text--margin">
+            Подпишитесь на рассылку
+          </p>
+          <div class="subscribe__flex">
             <input
               type="email"
               name="email"
               placeholder="E-mail"
               class="input-email"
             />
-            <button type="submit" class="subscribe-button">
+            <button
+              type="submit"
+              class="subscribe__button subscribe__button--margin"
+            >
               Подписаться
-              <svg width="24" height="24" class="icon-telegram">
+              <svg width="24" height="24" class="subscribe__icon--append">
                 <use href="../images/icons/sprite.svg#icon-telegram"></use>
               </svg>
             </button>
