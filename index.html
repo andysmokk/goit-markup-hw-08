@@ -16,7 +16,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/styles.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -25,7 +25,7 @@
         <nav class="navigation">
           <a
             href="https://andysmokk.github.io/goit-markup-hw-07/"
-            class="logo logo--position"
+            class="logo header__logo--position"
           >
             <span class="logo__text--blue">Web</span>Studio</a
           >
@@ -101,9 +101,9 @@
         <div class="container">
           <!-- заголовок "Особенности работы" скрыт -->
           <h2 class="visually-hidden">Особенности работы</h2>
-          <ul class="features">
-            <li class="grid">
-              <div class="features__box">
+          <ul class="grid">
+            <li class="grid__item">
+              <div class="features features--margin">
                 <svg width="70" height="70">
                   <use href="./images/icons/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -116,8 +116,8 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="grid">
-              <div class="features__box">
+            <li class="grid__item">
+              <div class="features features--margin">
                 <svg width="70" height="70">
                   <use href="./images/icons/sprite.svg#icon-clock"></use>
                 </svg>
@@ -130,8 +130,8 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="grid">
-              <div class="features__box">
+            <li class="grid__item">
+              <div class="features features--margin">
                 <svg width="70" height="70">
                   <use href="./images/icons/sprite.svg#icon-diagram"></use>
                 </svg>
@@ -144,8 +144,8 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="grid">
-              <div class="features__box">
+            <li class="grid__item">
+              <div class="features features--margin">
                 <svg width="70" height="70">
                   <use href="./images/icons/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -165,31 +165,30 @@
       <!-- Секция чем мы занимаемся -->
       <section class="section work">
         <div class="container">
-          <h2 class="work__title work__title--margin">Чем мы занимаемся</h2>
-          <ul class="work__list work__list--margin">
-            <li class="work__item work__item--margin grid">
+          <h2 class="section__title section__title--margin">
+            Чем мы занимаемся
+          </h2>
+          <ul class="grid">
+            <li class="work__item grid__item">
               <img
                 src="./images/home/programer-working.jpg"
                 alt="программист работает за столом в офисе"
-                width="370"
               />
               <p class="work__text work__text--padding">
                 Десктопные приложения
               </p>
             </li>
-            <li class="work__item work__item--margin grid">
+            <li class="work__item grid__item">
               <img
                 src="./images/home/web-ui-designers.jpg"
                 alt="веб-дизайнеры разрабатывают приложения для смартфонов"
-                width="370"
               />
               <p class="work__text work__text--padding">Мобильные приложения</p>
             </li>
-            <li class="work__item work__item--margin grid">
+            <li class="work__item grid__item">
               <img
                 src="./images/home/creative-artist-web-design.jpg"
                 alt="художник веб-дизайна с графическим планшетом"
-                width="370"
               />
               <p class="work__text work__text--padding">Дизайнерские решения</p>
             </li>
@@ -200,13 +199,12 @@
       <!-- Секция наша команда -->
       <section class="section team">
         <div class="container">
-          <h2 class="team__title team__title--margin">Наша команда</h2>
-          <ul class="team__list team__list--margin">
-            <li class="grid team__item team__item--margin">
+          <h2 class="section__title section__title--margin">Наша команда</h2>
+          <ul class="grid">
+            <li class="grid__item team__item">
               <img
                 src="./images/home/product-designer.jpg"
                 alt="Продакт-дизайнер"
-                width="270"
               />
               <div class="team__text--padding">
                 <h3 class="team__member-title team__member-title--margin">
@@ -247,11 +245,10 @@
                 </li>
               </ul>
             </li>
-            <li class="grid team__item team__item--margin">
+            <li class="grid__item team__item">
               <img
                 src="./images/home/frontend-developer.jpg"
                 alt="Фронтенд-разработчик"
-                width="270"
               />
               <div class="team__text--padding">
                 <h3 class="team__member-title team__member-title--margin">
@@ -292,12 +289,8 @@
                 </li>
               </ul>
             </li>
-            <li class="grid team__item team__item--margin">
-              <img
-                src="./images/home/marketing.jpg"
-                alt="Маркетолог"
-                width="270"
-              />
+            <li class="grid__item team__item">
+              <img src="./images/home/marketing.jpg" alt="Маркетолог" />
               <div class="team__text--padding">
                 <h3 class="team__member-title team__member-title--margin">
                   Николай Тарасов
@@ -337,11 +330,10 @@
                 </li>
               </ul>
             </li>
-            <li class="grid team__item team__item--margin">
+            <li class="grid__item team__item">
               <img
                 src="./images/home/ui-designer.jpg"
                 alt="Дизайнер интерфейсов"
-                width="270"
               />
               <div class="team__text--padding">
                 <h3 class="team__member-title team__member-title--margin">
@@ -409,46 +401,46 @@
       <!-- Секция клиенты -->
       <section class="section clients">
         <div class="container">
-          <h2 class="clients__title clients__title--margin">
+          <h2 class="section__title section__title--margin">
             Постоянные клиенты
           </h2>
-          <ul class="clients__list clients__list--margin">
-            <li class="clients__item">
+          <ul class="grid">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="44.27" height="49.23">
                   <use href="./images/icons/sprite.svg#icon-Client-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icons/sprite.svg#icon-Client-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="41" height="42.6">
                   <use href="./images/icons/sprite.svg#icon-Client-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="79.66" height="42.02">
                   <use href="./images/icons/sprite.svg#icon-Client-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="59" height="47">
                   <use href="./images/icons/sprite.svg#icon-Client-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item--grid">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="88.48" height="45.44">
                   <use href="./images/icons/sprite.svg#icon-Client-6"></use>

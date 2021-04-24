@@ -1,0 +1,32 @@
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border var(--animation-speed) var(--timing-function);
+}
+
+.clients__item--grid {
+  --grid-item: 6;
+}
+
+.clients__icon {
+  fill: var(--social-icon-color);
+
+  transition: fill var(--animation-speed) var(--timing-function);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: var(--accent-text-color);
+}
