@@ -43,6 +43,11 @@
   border-radius: 4px;
 
   transition: border var(--animation-speed) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+  }
 }
 
 .modal__input--padding {
@@ -66,6 +71,11 @@
   border-radius: 4px;
 
   transition: border var(--animation-speed) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+  }
 }
 
 .modal__textarea--padding {
@@ -85,21 +95,6 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__input:hover,
-.modal__input:focus {
-  border: 1px solid var(--accent-text-color);
-}
-
-.modal__textarea:hover,
-.modal__textarea:focus {
-  border: 1px solid var(--accent-text-color);
-}
-
-.modal__input:hover + .form-field__icon,
-.modal__input:focus + .form-field__icon {
-  fill: var(--accent-text-color);
-}
-
 .form-field__icon {
   position: absolute;
   top: 50%;
@@ -109,6 +104,11 @@
   fill: var(--button-text-color);
 
   transition: fill var(--animation-speed) var(--timing-function);
+
+  .modal__input:hover &,
+  .modal__input:focus & {
+    fill: var(--accent-text-color);
+  }
 }
 
 .form-field__policy {

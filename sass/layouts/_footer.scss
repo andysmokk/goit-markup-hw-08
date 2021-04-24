@@ -59,6 +59,10 @@
   flex-basis: calc(50% - 15px);
 }
 
+.subscribe__flex {
+  display: flex;
+}
+
 .subscribe--padding {
   padding-top: 72px;
   padding-bottom: 94px;
@@ -89,8 +93,4 @@
   background-color: #2f303a;
 
   width: 100%;
-}
-
-.subscribe__flex {
-  display: flex;
 }

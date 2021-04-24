@@ -20,22 +20,24 @@
   background-color: #ffffff;
 
   transition: background-color var(--animation-speed) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
 }
 
-.social__item .social__icon {
+// .social__item
+
+.social__icon {
   fill: var(--social-icon-color);
 
   transition: fill var(--animation-speed) var(--timing-function);
-}
 
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-  fill: var(--accent-icon-color);
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-text-color);
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--accent-icon-color);
+  }
 }
 
 .social__link--background {

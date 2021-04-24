@@ -92,15 +92,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color var(--animation-speed) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .form-field__button--margin {
   margin-top: 23px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.form-field__button:hover,
-.form-field__button:focus {
-  background-color: #188ce8;
 }

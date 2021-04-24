@@ -17,10 +17,6 @@
   margin-left: 93px;
 }
 
-.navigation__list .navigation__ltem:not(:last-child) {
-  margin-right: 50px;
-}
-
 .navigation__link {
   display: block;
 
@@ -40,13 +36,13 @@
   padding-bottom: 32px;
 }
 
-.navigation__list .navigation__link {
+.navigation__link {
   color: var(--link-text-site-nav);
-}
 
-.navigation__list .navigation__link:hover,
-.navigation__list .navigation__link:focus {
-  color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .navigation__list .navigation__link.current {
@@ -55,6 +51,10 @@
 
 .navigation__ltem {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation--current-page::after {

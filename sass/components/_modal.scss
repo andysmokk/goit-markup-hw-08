@@ -59,9 +59,9 @@
   z-index: 1;
 
   transition: fill var(--animation-speed) var(--timing-function);
-}
 
-.modal__button-close:hover,
-.modal__button-close:focus {
-  fill: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
 }
