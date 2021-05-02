@@ -53,7 +53,7 @@
 
   padding: 10px 28px;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   border: none;
@@ -64,7 +64,9 @@
 }
 
 .subscribe__button--margin {
-  margin-left: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon--append {
@@ -103,4 +105,34 @@
   margin-top: 23px;
   margin-right: auto;
   margin-left: auto;
+}
+
+// кнопка меню-закрыть мобильный хедер
+
+.mobile-menu__btn {
+  @media screen and (max-width: 767.98px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .mobile-menu__icon-close {
+      display: none;
+    }
+
+    &.is-open .mobile-menu__icon-close {
+      display: block;
+    }
+
+    &.is-open .mobile-menu__icon-menu {
+      display: none;
+    }
+
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 767.98px) {
+    display: none;
+  }
 }

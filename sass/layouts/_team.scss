@@ -13,6 +13,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   text-align: center;
+
+  --grid-item: 1;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
 }
 
 .team__member-text {

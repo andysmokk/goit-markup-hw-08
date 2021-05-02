@@ -1,13 +1,16 @@
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1199.98px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
-  // max-width: 1600px;
-  // min-height: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -16,11 +19,65 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/Img-hero.jpg);
+    url(../../images/hero/mobile/hero-mobile-min.jpg);
 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/mobile/hero-mobile@2x-min.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/tablet/hero-tablet-min.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/tablet/hero-tablet@2x-min.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/desktop/hero-desktop-min.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/desktop/hero-desktop@2x-min.jpg);
+    }
+  }
 }
 
 .hero__title {
@@ -34,8 +91,13 @@
   text-transform: uppercase;
 
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 26px;
+  }
 }
 
-.hero__title--popsition {
-  max-width: 696px;
+.hero__title--wrap {
+  display: flex;
+  justify-content: center;
 }

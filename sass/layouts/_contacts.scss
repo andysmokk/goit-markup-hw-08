@@ -1,16 +1,32 @@
 .contacts {
   display: flex;
-  margin-left: auto;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 767.98px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    flex-direction: inherit;
+  }
+}
+
+.contacts--margin {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 64px;
+  }
 }
 
 .contacts__link {
-  color: var(--link-text-ontacts);
+  display: block;
 
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+
+  color: var(--link-text-ontacts);
 
   transition: color var(--animation-speed) var(--timing-function);
 
@@ -18,19 +34,42 @@
   &:focus {
     color: var(--accent-text-color);
   }
+
+  @media screen and (max-width: 767.98px) {
+    &--large-print {
+      font-size: 34px;
+      line-height: 1.18;
+
+      color: var(--accent-text-color);
+
+      margin-bottom: 32px;
+
+      &:focus {
+        color: blue;
+      }
+    }
+  }
+
+  @media screen and (min-width: 767.98px) {
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: var(--link-text-ontacts);
+  }
 }
 
-.contacts__link--position {
-  display: flex;
-  align-items: center;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 767.98px) {
+  .contacts__link--position {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.contacts__link--padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 1199.98px) {
+  .contacts__link--padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .address__contact {
@@ -47,17 +86,28 @@
   }
 }
 
-.contacts__item--position + .contacts__item--position {
-  margin-left: 50px;
+@media screen and (min-width: 1199.98px) {
+  .contacts__item--position + .contacts__item--position {
+    margin-left: 30px;
+  }
 }
 
 .address__contact--margin {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1199.98px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__icon {
-  fill: currentColor;
+  display: none;
+
+  @media screen and (min-width: 767.98px) {
+    display: block;
+    fill: currentColor;
+  }
 }
 
 .contacts__icon--posotion {

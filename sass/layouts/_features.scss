@@ -1,5 +1,5 @@
-.features {
-  width: 270px;
+.features__box {
+  // width: 270px;
   height: 120px;
   background-color: var(--button-background-color);
 
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.features--margin {
+.features__box--margin {
   margin-bottom: 30px;
 }
 
@@ -21,6 +21,10 @@
   text-transform: uppercase;
 
   color: var(--title-text-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__title--margin {
@@ -31,4 +35,20 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features__item {
+  --grid-item: 1;
+
+  @media screen and (min-width: 480px) {
+    --grid-item: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
 }
