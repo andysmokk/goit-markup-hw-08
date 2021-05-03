@@ -209,7 +209,7 @@ body {
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 10;
   }
   .mobile-menu__btn .mobile-menu__icon-close {
     display: none;
@@ -289,7 +289,7 @@ body {
 @media screen and (min-width: 767.98px) {
   .header__logo--position {
     padding-top: 26px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
   }
 }
 
@@ -599,6 +599,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--main-white);
+    z-index: 5;
   }
 }
 
@@ -831,8 +832,14 @@ body {
   color: var(--accent-text-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .contacts__item--margin + .contacts__item--margin {
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 1199.98px) {
-  .contacts__item--position + .contacts__item--position {
+  .contacts__item--margin + .contacts__item--margin {
     margin-left: 30px;
   }
 }
@@ -861,6 +868,12 @@ body {
 
 .contacts__icon--posotion {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .contacts__icon--posotion {
+    margin-right: 8px;
+  }
 }
 
 .hero {

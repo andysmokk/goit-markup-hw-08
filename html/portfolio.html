@@ -20,70 +20,114 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
-      <div class="container header--align-center">
-        <nav class="navigation">
-          <a
-            href="https://andysmokk.github.io/goit-markup-hw-08/"
-            class="logo header__logo--position"
+    <header class="header">
+      <div class="container header--position">
+        <a
+          href="https://andysmokk.github.io/goit-markup-hw-08/"
+          class="logo header__logo--position"
+        >
+          <span class="logo__text--blue">Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="mobile-menu__btn"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
           >
-            <span class="logo__text--blue">Web</span>Studio</a
-          >
-          <ul class="navigation__list">
-            <li class="navigation__ltem">
-              <a
-                href="../index.html"
-                class="navigation__link navigation__link--position"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__ltem">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__link--position current navigation--current-page"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__ltem">
-              <a href="" class="navigation__link navigation__link--position"
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item--position">
-            <a
-              class="contacts__link contacts__link--position contacts__link--padding"
-              href="mailto:info@devstudio.com"
-            >
-              <svg
-                class="contacts__icon contacts__icon--posotion"
-                width="16"
-                height="12"
-              >
-                <use href="../images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item--position">
-            <a
-              class="contacts__link contacts__link--position contacts__link--padding"
-              href="tel:+380961111111"
-              ><svg
-                class="contacts__icon contacts__icon--posotion"
-                width="10"
-                height="16"
-              >
-                <use href="../images/icons/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <use
+              class="mobile-menu__icon-close"
+              href="../images/icons/sprite.svg#icon-close-btn-mob"
+            ></use>
+            <use
+              class="mobile-menu__icon-menu"
+              href="../images/icons/sprite.svg#icon-menu-mob"
+            ></use>
+          </svg>
+        </button>
+        <div
+          class="mobile-menu mobile-menu--padding mobile-menu--margin is-open"
+          data-menu
+        >
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__ltem navigation__ltem--margin">
+                <a
+                  href="../index.html"
+                  class="navigation__link navigation__link--padding"
+                  >Студия
+                </a>
+              </li>
+              <li class="navigation__ltem navigation__ltem--margin">
+                <a
+                  href="./portfolio.html"
+                  class="navigation__link navigation__link--padding current navigation--current-page"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__ltem navigation__ltem--margin">
+                <a href="/" class="navigation__link navigation__link--padding"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="contacts contacts--margin">
+              <li class="contacts__item--margin">
+                <a
+                  class="contacts__link contacts__link--position contacts__link--padding"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg
+                    class="contacts__icon contacts__icon--posotion"
+                    width="16"
+                    height="12"
+                  >
+                    <use href="../images/icons/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item--margin">
+                <a
+                  class="contacts__link contacts__link--large-print contacts__link--position contacts__link--padding"
+                  href="tel:+380961111111"
+                  ><svg
+                    class="contacts__icon contacts__icon--posotion"
+                    width="10"
+                    height="16"
+                  >
+                    <use
+                      href="../images/icons/sprite.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="social-menu">
+              <li class="social-menu__item social-menu__item--margin">
+                <a href="" class="social-menu__link">Instagram</a>
+              </li>
+              <li class="social-menu__item social-menu__item--margin">
+                <a href="" class="social-menu__link">Twitter</a>
+              </li>
+              <li class="social-menu__item social-menu__item--margin">
+                <a href="" class="social-menu__link">Facebook</a>
+              </li>
+              <li class="social-menu__item social-menu__item--margin">
+                <a href="" class="social-menu__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Секция примеры работ -->
       <section class="section">
@@ -594,5 +638,6 @@
         </form>
       </div>
     </footer>
+    <script src="../js/mobile-menu.js"></script>
   </body>
 </html>
