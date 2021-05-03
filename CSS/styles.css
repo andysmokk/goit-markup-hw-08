@@ -701,7 +701,6 @@ body {
 @media screen and (max-width: 767.98px) {
   .mobile-menu--padding {
     padding-top: 48px;
-    padding-right: 40px;
     padding-bottom: 48px;
     padding-left: 40px;
   }
@@ -734,7 +733,7 @@ body {
   position: relative;
 }
 
-.social-menu__item--margin {
+.social-menu__item--margin:not(:last-child) {
   margin-right: 20px;
 }
 
