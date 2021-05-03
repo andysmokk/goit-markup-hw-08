@@ -695,7 +695,13 @@ body {
     background-color: var(--accent-text-color);
     border-radius: 4px;
     position: absolute;
-    bottom: -1px;
+    bottom: -3%;
+  }
+}
+
+@media screen and (min-width: 767.98px) and (min-width: 1199.98px) {
+  .navigation--current-page::after {
+    bottom: -1%;
   }
 }
 
