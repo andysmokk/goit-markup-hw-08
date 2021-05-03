@@ -211,6 +211,9 @@ body {
     background-color: transparent;
     z-index: 10;
   }
+  .mobile-menu__btn:hover, .mobile-menu__btn:focus {
+    fill: var(--accent-text-color);
+  }
   .mobile-menu__btn .mobile-menu__icon-close {
     display: none;
   }
