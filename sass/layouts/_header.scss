@@ -29,6 +29,12 @@
     background-color: var(--main-white);
 
     z-index: 5;
+
+    transition: top var(--animation-speed);
+  }
+
+  &.is-open {
+    top: -100vh;
   }
 
   @media screen and (min-width: 767.98px) {
@@ -37,12 +43,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media screen and (max-width: 767.98px) {
-    &.is-open {
-      display: none;
-    }
   }
 }
 
