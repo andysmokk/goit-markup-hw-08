@@ -13,15 +13,6 @@
   }
 }
 
-// .header--position {
-//   display: flex;
-
-//   @media screen and (max-width: 767.98px) {
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-// }
-
 .mobile-menu {
   @media screen and (max-width: 767.98px) {
     position: absolute;
@@ -65,16 +56,6 @@
   }
 }
 
-// .mobile-menu--margin {
-//   @media screen and (min-width: 767.98px) {
-//     margin-left: 88px;
-//   }
-
-//   @media screen and (min-width: 1199.98px) {
-//     margin-left: 93px;
-//   }
-// }
-
 .navigation__list {
   & .navigation__link.current {
     color: var(--accent-text-color);
@@ -84,19 +65,6 @@
     display: flex;
   }
 }
-
-// .navigation__list .navigation__link.current {
-//   color: var(--accent-text-color);
-// }
-
-// .navigation__link {
-//   color: var(--link-text-site-nav);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-text-color);
-//   }
-// }
 
 .navigation__link {
   font-weight: 500;
@@ -128,13 +96,6 @@
   }
 }
 
-// .navigation__link--padding {
-//   @media screen and (min-width: 767.98px) {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-// }
-
 .navigation__ltem {
   @media screen and (min-width: 767.98px) {
     position: relative;
@@ -150,12 +111,6 @@
     }
   }
 }
-
-// .navigation__ltem--margin:not(:last-child) {
-//   @media screen and (max-width: 767.98px) {
-//     margin-bottom: 32px;
-//   }
-// }
 
 .navigation--current-page::after {
   @media screen and (min-width: 767.98px) {
@@ -175,21 +130,6 @@
     }
   }
 }
-
-// @media screen and (min-width: 767.98px) {
-//   .navigation--current-page::after {
-//     content: '';
-//     display: block;
-//     width: 100%;
-//     height: 4px;
-//     background-color: var(--accent-text-color);
-
-//     border-radius: 4px;
-
-//     position: absolute;
-//     bottom: -1%;
-//   }
-// }
 
 @media screen and (max-width: 767.98px) {
   .mobile-menu--padding {
@@ -222,19 +162,6 @@
   }
 }
 
-// .social-menu__link {
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.22;
-//   letter-spacing: 0.02em;
-
-//   color: var(--accent-text-color);
-
-//   &:focus {
-//     color: blue;
-//   }
-// }
-
 .social-menu__item {
   position: relative;
 
@@ -253,18 +180,3 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
-
-// .social-menu__item--margin:not(:last-child) {
-//   margin-right: 20px;
-// }
-
-// .social-menu__item:not(:first-child)::after {
-//   position: absolute;
-//   top: 0;
-//   left: -10px;
-
-//   content: '';
-//   display: block;
-//   height: 22px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-// }

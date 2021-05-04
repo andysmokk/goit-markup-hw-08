@@ -23,10 +23,6 @@
   }
 }
 
-// .examples__title--margin {
-//   margin-bottom: 4px;
-// }
-
 .examples__work-type {
   font-size: 16px;
   line-height: 1.88;
@@ -85,7 +81,7 @@
   letter-spacing: 0.03em;
   color: var(--button-text-color-hover-focus);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 400px) {
     font-size: 18px;
   }
 }
@@ -105,6 +101,10 @@
     left: 50%;
     width: 260px;
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 400px) {
+    min-width: 350px;
   }
 
   @media screen and (min-width: 480px) {

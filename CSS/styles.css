@@ -1289,7 +1289,7 @@ body.modal-open {
   color: var(--button-text-color-hover-focus);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .examples__text {
     font-size: 18px;
   }
@@ -1310,6 +1310,12 @@ body.modal-open {
   left: 50%;
   width: 260px;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 400px) {
+  .examples__text--overlay {
+    min-width: 350px;
+  }
 }
 
 @media screen and (min-width: 480px) {

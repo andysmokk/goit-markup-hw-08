@@ -30,16 +30,6 @@
   }
 }
 
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   visibility: visible;
-//   pointer-events: none;
-// }
-
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(0.1);
-// }
-
 .modal {
   position: relative;
 
@@ -77,17 +67,6 @@
     }
   }
 }
-
-// .modal--size {
-//   @media screen and (min-width: 767.98px) {
-//     height: 609px;
-//   }
-
-//   @media screen and (min-width: 1199.98px) {
-//     min-width: 528px;
-//     height: 581px;
-//   }
-// }
 
 @media screen and (min-width: 767.98px) {
   .modal--padding {
