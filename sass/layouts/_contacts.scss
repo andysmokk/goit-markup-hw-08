@@ -9,13 +9,19 @@
   @media screen and (min-width: 1199.98px) {
     flex-direction: inherit;
   }
-}
 
-.contacts--margin {
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 64px;
+  &--margin {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 64px;
+    }
   }
 }
+
+// .contacts--margin {
+//   @media screen and (max-width: 767.98px) {
+//     margin-bottom: 64px;
+//   }
+// }
 
 .contacts__link {
   display: block;
@@ -44,7 +50,8 @@
 
       margin-bottom: 32px;
 
-      &:focus {
+      &:focus,
+      &:hover {
         color: blue;
       }
     }
@@ -56,21 +63,35 @@
 
     color: var(--link-text-ontacts);
   }
-}
 
-@media screen and (min-width: 767.98px) {
-  .contacts__link--position {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 767.98px) {
+    &--position {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    &--padding {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }
 
-@media screen and (min-width: 1199.98px) {
-  .contacts__link--padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
+// @media screen and (min-width: 767.98px) {
+//   .contacts__link--position {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// @media screen and (min-width: 1199.98px) {
+//   .contacts__link--padding {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//   }
+// }
 
 .address__contact {
   color: rgba(255, 255, 255, 0.6);
@@ -84,7 +105,25 @@
   &:focus {
     color: var(--accent-text-color);
   }
+
+  &--margin {
+    display: block;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1199.98px) {
+      margin-bottom: 9px;
+    }
+  }
 }
+
+// .address__contact--margin {
+//   display: block;
+//   margin-bottom: 8px;
+
+//   @media screen and (min-width: 1199.98px) {
+//     margin-bottom: 9px;
+//   }
+// }
 
 .contacts__item--margin + .contacts__item--margin {
   @media screen and (max-width: 1199.98px) {
@@ -96,15 +135,6 @@
   }
 }
 
-.address__contact--margin {
-  display: block;
-  margin-bottom: 8px;
-
-  @media screen and (min-width: 1199.98px) {
-    margin-bottom: 9px;
-  }
-}
-
 .contacts__icon {
   display: none;
 
@@ -112,12 +142,20 @@
     display: block;
     fill: currentColor;
   }
-}
 
-.contacts__icon--posotion {
-  margin-right: 10px;
+  &--posotion {
+    margin-right: 10px;
 
-  @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-    margin-right: 8px;
+    @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+      margin-right: 8px;
+    }
   }
 }
+
+// .contacts__icon--posotion {
+//   margin-right: 10px;
+
+//   @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+//     margin-right: 8px;
+//   }
+// }

@@ -12,11 +12,15 @@
   text-align: center;
 
   --grid-item: 3;
+
+  &--margin {
+    margin-right: 30px;
+  }
 }
 
-.work__item--margin {
-  margin-right: 30px;
-}
+// .work__item--margin {
+//   margin-right: 30px;
+// }
 
 .work__text {
   position: absolute;
@@ -33,8 +37,12 @@
   color: var(--accent-icon-color);
 
   background-color: rgba(47, 48, 58, 0.8);
+
+  &--padding {
+    padding-top: 27px;
+  }
 }
 
-.work__text--padding {
-  padding-top: 27px;
-}
+// .work__text--padding {
+//   padding-top: 27px;
+// }

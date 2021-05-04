@@ -95,9 +95,14 @@
   @media screen and (max-width: 1199.98px) {
     font-size: 26px;
   }
+
+  &--wrap {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.hero__title--wrap {
-  display: flex;
-  justify-content: center;
-}
+// .hero__title--wrap {
+//   display: flex;
+//   justify-content: center;
+// }

@@ -15,12 +15,20 @@
   text-align: center;
 
   color: var(--title-text-color);
-}
 
-.section__title--margin {
-  margin-bottom: 30px;
+  &--margin {
+    margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
+
+// .section__title--margin {
+//   margin-bottom: 30px;
+
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//   }
+// }

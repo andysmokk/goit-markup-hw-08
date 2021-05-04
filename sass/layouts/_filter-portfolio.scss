@@ -17,16 +17,25 @@
   @media screen and (min-width: 767.98px) {
     justify-content: center;
   }
-}
 
-.filter__list--margin {
-  margin-left: -8px;
-  margin-bottom: -15px;
+  &--margin {
+    margin-left: -8px;
+    margin-bottom: -15px;
 
-  @media screen and (min-width: 767.98px) {
-    margin-bottom: 0;
+    @media screen and (min-width: 767.98px) {
+      margin-bottom: 0;
+    }
   }
 }
+
+// .filter__list--margin {
+//   margin-left: -8px;
+//   margin-bottom: -15px;
+
+//   @media screen and (min-width: 767.98px) {
+//     margin-bottom: 0;
+//   }
+// }
 
 .filter__item--margin {
   margin-left: 8px;
