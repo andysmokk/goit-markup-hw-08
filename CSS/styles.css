@@ -12,7 +12,7 @@
   --main-white: #ffffff;
   --grid-item: 4;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-speed: 250ms;
+  --animation-speed: 2500ms;
 }
 
 .visually-hidden {
@@ -1305,34 +1305,36 @@ body.modal-open {
 
 .examples__text--overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  transform: translate(-50%, 90%);
   transition: transform var(--animation-speed) var(--timing-function);
-  padding: 15px 25px;
 }
 
 .examples__link:hover .examples__text--overlay,
 .examples__link:focus .examples__text--overlay {
-  opacity: 1;
-  transform: translateY(0);
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 480px) {
   .examples__text--overlay {
-    padding: 77px 24px;
+    min-width: 402px;
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .examples__text--overlay {
-    padding: 49px 24px;
+    min-width: 306px;
   }
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .examples__text--overlay {
-    padding: 63px 24px;
+    min-width: 322px;
   }
 }
 

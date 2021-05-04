@@ -88,31 +88,31 @@
 
 .examples__text--overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  width: 260px;
 
-  transform: translateY(100%);
+  transform: translate(-50%, 90%);
   transition: transform var(--animation-speed) var(--timing-function);
-
-  padding: 15px 25px;
 
   .examples__link:hover &,
   .examples__link:focus & {
-    opacity: 1;
-
-    transform: translateY(0);
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    transform: translate(-50%, -50%);
   }
 
   @media screen and (min-width: 480px) {
-    padding: 77px 24px;
+    min-width: 402px;
   }
 
-  @media screen and (min-width: 767.98px) {
-    padding: 49px 24px;
+  @media screen and (min-width: 768px) {
+    min-width: 306px;
   }
 
-  @media screen and (min-width: 1199.98px) {
-    padding: 63px 24px;
+  @media screen and (min-width: 1200px) {
+    min-width: 322px;
   }
 }
 
