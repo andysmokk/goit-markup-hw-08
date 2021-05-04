@@ -663,7 +663,7 @@ body.modal-open {
 
 @media screen and (max-width: 767.98px) {
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -1291,10 +1291,16 @@ body.modal-open {
 }
 
 .examples__text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--button-text-color-hover-focus);
+}
+
+@media screen and (min-width: 480px) {
+  .examples__text {
+    font-size: 18px;
+  }
 }
 
 .examples__text--overlay {
@@ -1303,13 +1309,19 @@ body.modal-open {
   left: 0;
   transform: translateY(100%);
   transition: transform var(--animation-speed) var(--timing-function);
-  padding: 77px 24px;
+  padding: 15px 25px;
 }
 
 .examples__link:hover .examples__text--overlay,
 .examples__link:focus .examples__text--overlay {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (min-width: 480px) {
+  .examples__text--overlay {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 767.98px) {

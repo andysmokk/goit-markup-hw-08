@@ -76,10 +76,14 @@
 }
 
 .examples__text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--button-text-color-hover-focus);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .examples__text--overlay {
@@ -90,13 +94,17 @@
   transform: translateY(100%);
   transition: transform var(--animation-speed) var(--timing-function);
 
-  padding: 77px 24px;
+  padding: 15px 25px;
 
   .examples__link:hover &,
   .examples__link:focus & {
     opacity: 1;
 
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
   }
 
   @media screen and (min-width: 767.98px) {
